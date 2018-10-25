@@ -55,9 +55,9 @@ def deviding_point(p0, p1, ratio):
 # 四角形の各辺の内分点を求める関数
 # deviding_points(四角形の4頂点内分比）
 def deviding_points(points, ratio):
-    [p0, pl, p2, p3] = points
-    pr0 = deviding_point(p0, pl, ratio)
-    prl = deviding_point(pl, p2, ratio)
+    [p0, p1, p2, p3] = points
+    pr0 = deviding_point(p0, p1, ratio)
+    pr1 = deviding_point(p1, p2, ratio)
     pr2 = deviding_point(p2, p3, ratio)
     pr3 = deviding_point(p3, p0, ratio)
-    return [pr0, prl, pr2, pr3]
+    return [pr0, pr1, pr2, pr3]

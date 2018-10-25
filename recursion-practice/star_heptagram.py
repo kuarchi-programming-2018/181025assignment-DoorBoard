@@ -11,6 +11,7 @@ Created on Thu Oct 25 18:38:44 2018
 from turtle import*
 
 reset()
+hideturtle()
 
 #正七角形
 penup()
